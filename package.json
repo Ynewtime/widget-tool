@@ -1,0 +1,15 @@
+{
+  "name": "widget-tool",
+  "author": "Ynewtime",
+  "version": "0.1.0",
+  "description": "Tool for developing appcube widget: widget-tool -w WIDGET_PATH",
+  "bin": {
+    "widget-tool": "src/bin.mjs"
+  },
+  "dependencies": {
+    "chokidar": "^3.5.3",
+    "commander": "^9.4.1",
+    "http-terminator": "^3.2.0",
+    "serve-handler": "^6.1.3"
+  }
+}
