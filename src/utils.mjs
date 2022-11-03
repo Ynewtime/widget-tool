@@ -5,9 +5,10 @@ import http from 'node:http'
 import handler from 'serve-handler'
 import { createHttpTerminator } from 'http-terminator'
 
+export const getCurrentPath = () => path.dirname(fileURLToPath(import.meta.url))
+
 export function getPackageJson() {
-  const currentPath = path.dirname(fileURLToPath(import.meta.url))
-  const packageJsonPath = path.join(currentPath, '../package.json')
+  const packageJsonPath = path.resolve(getCurrentPath(), '../package.json')
   return JSON.parse(fs.readFileSync(packageJsonPath, 'utf8'))
 }
 
