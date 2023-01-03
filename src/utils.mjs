@@ -24,7 +24,7 @@ export function serveDir(dir, port, watch) {
       public: dir,
       headers: [
         {
-          source: '*',
+          source: '**/*',
           headers: [
             {
               key: 'Access-Control-Allow-Origin',

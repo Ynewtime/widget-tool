@@ -1,7 +1,7 @@
 {
   "name": "widget-tool",
   "author": "Ynewtime",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Tool for developing appcube widget: widget-tool -w WIDGET_PATH",
   "bin": {
     "widget-tool": "src/bin.mjs"
